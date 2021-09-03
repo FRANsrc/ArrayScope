@@ -6,11 +6,10 @@ public class ArrayPracticeOne {
     public static int[] nums = new int[10];
 
     public static void main(String[] args) {
-
+        
         Scanner input = new Scanner(System.in);
         int holder;
-        int j = 0;
-
+        int j = 0; // go through array
 
         do {
             System.out.println("Enter a 0 or 1: ");
@@ -19,8 +18,7 @@ public class ArrayPracticeOne {
             {
                 System.out.println("Number not accepted.");
             }
-            else
-            {
+            else {
                 nums[j] = holder;
                 j++;
             }
@@ -28,11 +26,8 @@ public class ArrayPracticeOne {
         }
         while (j < nums.length);
 
-
         System.out.println('1'+ " was repeated " + findMaxConsecutiveNumber(nums) + " times");
-
     }
-
 
     public static int findMaxConsecutiveNumber(int[] nums)
     {
